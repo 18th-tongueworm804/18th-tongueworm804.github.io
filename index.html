@@ -141,6 +141,25 @@
       border-radius: 999px;
       margin-bottom: 1.5rem;
     }
+	
+	.hero-photo {
+	  width: 150px;
+	  height: 150px;
+	  border-radius: 50%;
+	  object-fit: cover;
+	  border: 3px solid var(--accent);
+	  margin-bottom: 1.5rem;
+	  box-shadow: 0 0 30px rgba(59,130,246,0.25);
+	}
+	
+	.hero-photo {
+	  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.hero-photo:hover {
+	  transform: scale(1.05);
+	  box-shadow: 0 0 40px rgba(59,130,246,0.4);
+	}
 
     .hero-name {
       font-family: var(--font-display);
@@ -509,6 +528,11 @@
 
 <!-- ── HERO ── -->
 <section id="hero">
+  <img 
+    src="images/profile.jpg" 
+    alt="Photo de profil de Clément Allard"
+    class="hero-photo"
+  >
   <div class="hero-tag" data-i18n="hero-tag"></div>
   <h1 class="hero-name">Clément <span>Allard</span></h1>
   <p class="hero-title" data-i18n="hero-subtitle"></p>
